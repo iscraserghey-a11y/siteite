@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* <!-- Подключение шрифта --> */
+
+* {
+    box-sizing: border-box; /* включает padding и border в размер элемента */
+}
+
+body { /* <!-- Основные настройки страницы --> */
+    margin: 0;
+    font-family: "Comfortaa", sans-serif;
+    font-size: 17px;
+}
+
+main {
+min-height: 100vh; /* минимум высота = весь экран */
+    font-optical-sizing: auto; /* автоматическая настройка шрифта */
+    font-weight: weight; /* толщина шрифта (но тут ошибка — должно быть число или normal/bold) */
+    font-style: normal; /* обычный стиль текста */
+}
+
+/* <!-- Шапка сайта --> */
+header {
+    background: #2d4057; /* цвет фона */
+    position: fixed; /* закрепляет сверху */
+    width: 100%; /* ширина на весь экран */
+    top: 0%; /* прижимает к верху */
+    padding: 10px 15px 5px 15px; /* внутренние отступы */
+}
+
+/* <!-- Ссылки меню --> */
+navbar a {
+    margin-left: 30px; /* отступ слева */
+    margin-bottom: 10px; /* отступ снизу */
+    display: inline-block; /* позволяет задавать размеры */
+    overflow: auto; /* контроль переполнения */
+}
+
+navbar a {
+    color: white; /* цвет текста */
+    text-decoration: none; /* убирает подчёркивание */
+    margin-right: 20px; /* отступ справа */
+    font-size: 20px; /* размер текста */
+}
+
+/* <!-- Эффект при наведении --> */
+navbar a:hover {
+    color: #f3deca; /* цвет при наведении */
+    text-decoration: underline 1px; /* подчёркивание */
+}
+
+/* <!-- Подвал --> */
+footer {
+    min-height: 80px; /* минимальная высота */
+    background: #2d4057; /* фон */
+    text-align: center; /* текст по центру */
+    color: rgb(255, 255, 255); /* цвет текста */
+    padding-top: 35px; /* отступ сверху */
+}
+
+/* <!-- Абзацы --> */
+p {
+    line-height: 150%; /* расстояние между строками */
+    text-indent: 30px; /* отступ первой строки */
+}
+
+/* <!-- Список --> */
+li {
+    margin-top: 10px; /* отступ сверху */
+    padding-left: 15px; /* отступ слева */
+    list-style-image: linear-gradient(#fa9483, #fa9483); /* стиль маркера */
+}
+
+/* <!-- Заголовки --> */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0; /* убирает верхний отступ */
+    font-family: "Comfortaa", sans-serif; /* шрифт */
+}
+
+/* <!-- Заголовок h1 --> */
+h1 {
+    font-size: 270%; /* размер */
+    text-shadow: 5px 5px #63636360; /* тень текста */
+}
+
+/* <!-- Заголовок h2 --> */
+h2 {
+    font-size: 200%; /* размер */
+}
+
+/* <!-- Секции --> */
+section {
+    padding: 90px 15%; /* внутренние отступы */
+}
+
+/* <!-- Логотип --> */
+.logo {
+    height: 50px; /* высота */
+}
+
+/* <!-- Главный экран --> */
+#index {
+    background: linear-gradient(#34343486, #3535358b), url('../images/balti.jpg'); /* фон + картинка */
+    background-size: cover; /* растягивает */
+    min-height: 100vh; /* высота */
+}
+
+/* <!-- Блок с текстом --> */
+.index-info {
+    margin-top: 25vh; /* отступ сверху */
+    text-align: center; /* по центру */
+}
+
+/* <!-- Заголовок на главной --> */
+.index-info h1 {
+    font-size: 350%; /* размер */
+    color: rgb(255, 255, 255); /* цвет */
+    backdrop-filter: blur(15px); /* размытие фона */
+    background: rgba(255, 255, 255, 0.15); /* прозрачный фон */
+    display: inline-block; /* формат */
+    padding: 20px; /* отступ */
+    border-radius: 16px; /* скругление */
+    border: 1px solid rgba(255, 255, 255, 0.25); /* рамка */
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15); /* тень */
+}
+
+/* <!-- Ссылка --> */
+.link-index {
+    color: rgb(255, 255, 255); /* цвет */
+    text-decoration: underline #fa9483 2px; /* подчёркивание */
+    font-size: 20px; /* размер */
+}
+
+.link-index:hover {
+    color: #f3deca;
+}
+
+/* <!-- Центрирование --> */
+.centered {
+    text-align: center; /* центр */
+}
+
+/* <!-- Видео --> */
+.vframe {
+    width: 100%; /* ширина */
+    height: 30vw; /* высота */
+    border: 2px solid #fa9483; /* рамка */
+    border-radius: 5px; /* скругление */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px; /* тень */
+}
+
+/* <!-- Блок места --> */
+.loc {
+    overflow: auto; /* фиксирует float */
+    border-bottom: 2px #5a5a5a83 dashed; /* линия */
+    margin-bottom: 15px; /* отступ */
+}
+
+/* <!-- Картинка --> */
+.loc img {
+    height: 16vh; /* высота */
+    width: 16vh; /* ширина */
+    object-fit: cover; /* обрезка изображения */
+    border-radius: 50%; /* круг */
+    float: left; /* обтекание */
+    margin-right: 15px; /* отступ */
+    margin-bottom: 15px; /* отступ */
+}
+
+/* <!-- Карта --> */
+.harta {
+    width: 100%; /* ширина */
+    height: 40vh; /* высота */
+    border: 4px solid #f3deca; /* рамка */
+    border-radius: 5px; /* скругление */
+}
+
+/* <!-- Строка --> */
+.row {
+    overflow: auto; /* фикс float */
+}
+
+/* <!-- Колонка --> */
+.col-50 {
+    width: 50%; /* половина */
+    float: left; /* влево */
+    padding: 0px 10px; /* отступ */
+}
+
+/* <!-- Контакты и форма --> */
+.contacte, .cform {
+    border: 2px solid #f3deca; /* рамка */
+    border-radius: 5px; /* скругление */
+    background-color: #f3deca60; /* фон */
+    padding: 5px 5%; /* отступ */
+    height: 325px; /* высота */
+    margin-bottom: 15px; /* отступ */
+}
+
+/* <!-- Поля ввода --> */
+.cform input, .cform textarea {
+    width: 100%; /* ширина */
+    font-size: 15px; /* размер */
+    font-family: inherit; /* наследует шрифт */
+    margin-bottom: 10px; /* отступ */
+    padding: 4px 6px; /* внутренний отступ */
+}
+
+/* <!-- Бургер меню --> */
+#hamburger {
+    color: white; /* цвет */
+    font-size: 28px; /* размер */
+    position: absolute; /* позиция */
+    right: 22px; /* справа */
+    top: 24px; /* сверху */
+    cursor: pointer; /* курсор */
+    display: none; /* скрыт */
+}
+
+
+
+
+/* <!-- Адаптив --> */
+@media (max-width: 800px) {
+
+    body {
+        font-size: 16px; /* меньше текст */
+    }
+
+    section {
+        padding: 90px 10px; /* меньше отступ */
+    }
+
+    .index-info h1 {
+        font-size: 250%; /* меньше */
+    }
+
+    .vframe {
+        height: 55vw; /* выше */
+    }
+
+    [class^="col-"] {
+        width: 100% !important; /* на всю ширину */
+    }
+
+    navbar a {
+        display: none; /* скрыть */
+    }
+
+    navbar.mobile a {
+        display: block; /* показать */
+        text-align: center; /* центр */
+        margin-top: 12px; /* отступ */
+    }
+
+    navbar {
+        display: block; /* показать */
+    }
+
+    #hamburger {
+        display: block; /* показать */
+    }
+}
